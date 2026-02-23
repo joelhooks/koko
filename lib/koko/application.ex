@@ -10,7 +10,7 @@ defmodule Koko.Application do
     children = [
       # Redis connections (one for commands, one for pub/sub)
       {Redix, name: :redix, host: "localhost", port: 6379},
-      {Redix.PubSub, name: :redix_pubsub, host: "localhost", port: 6379},
+      %{id: :redix_pubsub, start: {Redix.PubSub, :start_link, [[name: :redix_pubsub, host: "localhost", port: 6379]]}},
       # Event listener — subscribes to joelclaw gateway events
       Koko.EventListener,
     ]
