@@ -19,9 +19,12 @@ Phase 1: Passive observer. Subscribed to `joelclaw:gateway:events`, logging what
 
 ## ADRs
 
+- [ADR-0064](https://joelclaw.com/adrs/0064-elixir-beam-evaluation) — Original Elixir/BEAM evaluation
+- [ADR-0114](https://joelclaw.com/adrs/0114-elixir-beam-jido-migration) — Full architecture evaluation (supersedes 0064)
 - [ADR-0115](https://joelclaw.com/adrs/0115-koko-project-charter) — Project charter
 - [ADR-0116](https://joelclaw.com/adrs/0116-koko-redis-bridge-protocol) — Redis bridge protocol
 - [ADR-0117](https://joelclaw.com/adrs/0117-koko-first-workloads) — First workloads
+- [ADR-0118](https://joelclaw.com/adrs/0118-koko-shadow-executor) — Shadow executor mode
 
 ## Run
 
